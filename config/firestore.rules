@@ -1,0 +1,8 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /transactions/{document=**} {
+      allow read, write: if true;  // 開發測試用，生產環境要改為適當的安全規則
+    }
+  }
+}

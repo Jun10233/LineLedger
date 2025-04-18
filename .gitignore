@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Firebase
+serviceAccountKey.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.html
